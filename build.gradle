@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'pl.edu.agh.ki.tetrahedralmesh'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation group: 'org.graphstream', name: 'gs-core', version: '2.0'
+    implementation group: 'org.graphstream', name: 'gs-ui-swing', version: '2.0'
+    implementation group: 'org.graphstream', name: 'gs-algo', version: '2.0'
+    implementation group: 'org.javatuples', name: 'javatuples', version: '1.2'
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.7.0'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.18.1'
+}
